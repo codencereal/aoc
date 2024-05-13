@@ -28,8 +28,8 @@ int main(int argc, char *argv[]) {
     unsigned int i = 0;
     int foundIndex;
 
-    while (line[i] != NULL) { // Check for first digit linearly forwards
-      foundIndex = -1; // The code below code probably be a function to make it more readable
+    while (line[i] != '\0') { // Check for first digit linearly forwards
+      foundIndex = -1; // The code below could probably be a function to make it more readable
       for (int j = 0; j < digitsLength; ++j) {
         if (line[i] == digits[j]) {
           firstDigit = line[i];
